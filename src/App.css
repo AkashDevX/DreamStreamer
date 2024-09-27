@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styling for the body */
+body {
+    background-color: #0d0d16; /* Darker grey-blue background for the entire site */
+    color: #ddd; /* Light grey text color for readability */
+}
+
+/* Authenticator and form container */
+[data-amplify-authenticator] [data-amplify-router] {
+    background-color: #0d0d16 !important; /* Darker grey-blue */
+    border-radius: 20px !important;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7); /* Deeper shadow */
+}
+
+.amplify-tabs__list--equal {
+    border: 0 !important;
+    margin-bottom: 15px;
+}
+
+.amplify-tabs__item--active {
+    border: 0 !important;
+    background-color: #111827; /* Darker grey for active tab */
+    color: #fff; /* White text for contrast */
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.amplify-tabs__item {
+    border: 0 !important;
+    padding: 10px 20px;
+    color: #999; /* Medium grey text */
+    transition: background-color 0.3s ease;
+}
+
+.amplify-tabs__item:hover {
+    background-color: #1a202e; /* Darker grey on hover */
+}
+
+.amplify-input {
+    background-color: #1a202e; /* Darker grey-blue input background */
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ddd; /* Light grey text */
+    transition: border-color 0.3s ease;
+}
+
+.amplify-input:focus {
+    border-color: #e94560; /* Red border on focus */
+    box-shadow: 0px 0px 10px rgba(233, 69, 96, 0.5); /* Subtle red glow */
+}
+
+/* Password visibility toggle button */
+.amplify-password-toggle {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #e94560; /* Red color for visibility icon */
+    font-size: 24px; /* Increase size for better visibility */
+    height: 40px; /* Set a specific height larger than the input */
+    width: 40px; /* Set a specific width */
+    position: absolute; /* Positioning for overlay on input field */
+    right: 10px; /* Adjust to fit within the input field */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to vertical center */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect */
+.amplify-password-toggle:hover {
+    color: #ffb74d; /* Lighter orange on hover */
+}
+
+/* Primary Button */
+.amplify-button--primary {
+    background: linear-gradient(
+        to right,
+        #e94560, /* Red */
+        #0f3460 /* Dark blue */
+    );
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.amplify-button--primary:hover {
+    background-color: #e94560 !important;
+    transform: translateY(-3px);
+}
+
+.amplify-button--primary:active {
+    transform: translateY(0);
+}
+
+.amplify-button--secondary {
+    background-color: #333; /* Dark grey secondary button */
+    color: #ccc; /* Light grey text */
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.amplify-button--secondary:hover {
+    background-color: #444; /* Slightly lighter grey on hover */
+}
+
+.amplify-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #111827; /* Darker background for form container */
+    border-radius: 10px;
+}
+
+.amplify-header {
+    font-size: 24px;
+    color: #fff; /* White text for better visibility */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.amplify-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa; /* Lighter grey footer text */
+}
+
+.auth-logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+    filter: brightness(0.6); /* Dimmed for dark mode */
+}
+
+.auth-title {
+    font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+    font-size: 40px; /* Increased font size */
+    font-weight: bold; /* Bold weight for emphasis */
+    color: #E0E0E0; /* Light grey for title */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+    text-transform: uppercase; /* Uppercase letters for impact */
+    letter-spacing: 1px; /* Slightly increased spacing */
+    line-height: 1.2; /* Improved line height */
+    padding: 10px; /* Padding for the title */
+}
+
